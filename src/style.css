@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header {
+  background-color: rgb(55, 54, 54);
+  color: rgb(178, 178, 178);
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin: .3rem
+}
+
+nav li a {
+  color: rgb(178, 178, 178);
+  text-decoration: none;
+}
+
+
+main ul {
+  padding: 1rem; 
+  display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 20px;
+  
+}
+
+main li {
+  list-style: none;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem;
+}
+
+.name p {
+  font-size: 13px;
+}
+
+.name p i {
+    margin-right: 0 .5rem;
+}
+
+button {
+    width: 100%;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.img img{
+  width: 100%; 
+}
+
+footer {
+  background-color: rgb(55, 54, 54);
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  color: rgb(178, 178, 178);
+  font-size: 14px;
+}
+
+@media (min-width:768px) {
+  header,
+  footer {
+    padding: 1rem 3rem;
+  }
+
+  main ul{
+    padding: 1rem 2rem;
+  }
+
+  main ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .name p {
+    font-size: 18px;
+  }
+
+  main button {
+    font-size: 20px;
+  }
+
+  .ident,
+  .comment,
+  .addcomment {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .ident .image {
+    height: 220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ident .image img {
+    height: 100%;
+  }
+
+}
+
