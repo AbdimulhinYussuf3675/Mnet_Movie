@@ -18,6 +18,10 @@ nav {
   align-items: center;
 }
 
+.logo h2 {
+  font-size: 13px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -25,11 +29,12 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin: .3rem
+  margin: 3px;
 }
 
 nav li a {
   color: rgb(178, 178, 178);
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -87,7 +92,7 @@ footer {
   }
 
   main {
-    width: 80%;
+    width: 90%;
     margin: 1rem auto;
   
   }

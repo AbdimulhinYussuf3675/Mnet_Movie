@@ -15,15 +15,22 @@ movies().then((movie)=>{
         const num = document.querySelector('.total');
         num.innerText = movie.length;
         const heart = document.querySelectorAll('#heart');
+        const card = document.querySelectorAll('.list');
+        fetchlike(card) 
         heart.forEach((heat,inde)=>{
             heat.addEventListener('click',()=>{
                 if(inde === index){
                    addLikes(each.show.id)
-                }
+                  const parent = heat.parentElement
+                  const  eachlike= parent.querySelector('.like');
+                  let eachIntext = eachlike.innerText
+                  const increase = parseInt(eachIntext,10) + 1
+                  eachlike.innerText = increase;
+                } 
      
              })
         })
-        fetchlike(each.show.id) 
+        
      
     })
 })
