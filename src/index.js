@@ -1,7 +1,8 @@
+import './style.css';
 import addLikes from './modules/addlikes.js';
 import fetchlike from './modules/fetchlike.js';
 import layout from './modules/pagelayout.js';
-import './style.css';
+import popUpHandler from './modules/resPopup';
 
 const movies = async () => {
   const res = await fetch ('https://api.tvmaze.com/search/shows?q=girls');
@@ -12,6 +13,7 @@ const movies = async () => {
 movies().then((movie)=>{
     movie.map((each,index)=>{
         layout(each)
+        popUpHandler(each)
         const num = document.querySelector('.total');
         num.innerText = movie.length;
         const heart = document.querySelectorAll('#heart');

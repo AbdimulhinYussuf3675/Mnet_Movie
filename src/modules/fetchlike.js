@@ -6,7 +6,7 @@ const fetchlike = (e) => {
     }
     likes().then((data)=> {
         data.map((dat,index)=> {
-            console.log(dat)
+            // console.log(dat)
             if(e === dat.index){
                 const like = document.querySelector('.like')
                 like.innerText = dat.likes
