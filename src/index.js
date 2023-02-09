@@ -1,46 +1,76 @@
-import './style.css';
-import addLikes from './modules/addlikes.js';
+import addcomment from './modules/addcomment.js';
+import commentForm from './modules/comment.js';
+import fetchapi from './modules/fetchapi.js';
 import fetchlike from './modules/fetchlike.js';
+import listlayout from './modules/listlayout.js';
 import layout from './modules/pagelayout.js';
-import popUpHandler from './modules/resPopup';
+import poptemp from './modules/poptemplate.js';
+import './style.css';
 
 const movies = async () => {
-  const res = await fetch ('https://api.tvmaze.com/search/shows?q=girls');
+  const res = await fetch('https://api.tvmaze.com/search/shows?q=girls');
   const data = await res.json();
   return data;
-}
+};
 
-movies().then((movie)=>{
-    movie.map((each,index)=>{
-        layout(each)
-        popUpHandler(each)
-        const num = document.querySelector('.total');
-        num.innerText = movie.length;
-        const heart = document.querySelectorAll('#heart');
-        heart.forEach((heat,inde)=>{
-            heat.addEventListener('click',()=>{
-                if(inde === index){
-                   addLikes(each.show.id)
-                }
-     
-             })
+movies().then((movie) => {
+  movie.map((each, index) => {
+    console.log(each)
+    layout(each);
+    const num = document.querySelector('.total');
+    num.innerText = movie.length;
+    const heart = document.querySelectorAll('#heart');
+    const card = document.querySelectorAll('.list');
+    fetchlike(card);
+    const comment = document.querySelectorAll('#comment');
+    comment.forEach((com,ind)=>{
+      com.addEventListener('click',()=>{
+        if(index === ind ){
+          let lists = []
+          poptemp(each, 'comment')
+          commentForm()
+        //fetch api
+          fetchapi(each.show.id,lists,"comment")
+
+        //add comment
+        const form = document.querySelector('form');
+        const user = document.querySelector('#name');
+        const text = document.querySelector('#text');
+        const comsec = document.querySelector('.test')
+        form.addEventListener('submit', (e) =>{
+        e.preventDefault();
+        addcomment(each.show.id,user.value,text.value)
+        lists.push({creation_date:"few minutes ago", username:user.value,comment:text.value})
+        comsec.innerHTML = "";
+        lists.map((e)=>{listlayout(e,comsec);})
+        user.value = "";
+        text.value = "";
+       const header = document.querySelector('.head');
+          // counter start
+       header.innerHTML = `comment ${lists.length}`
         })
-        fetchlike(each.show.id) 
-     
+        //to cancel the pop up
+        const X = document.querySelector('.X');
+        X.addEventListener('click', ()=>{
+        const pop = document.querySelector('.pop');
+        pop.remove();
+        pop.innerrHTML = "";
+      })
+        }
+      })
     })
-})
+    return each;
+  });
+});
+
+const getId = async () => {
+  const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
+    { method: 'post' });
+  const data = await res.text();
+  return data;
+};
+
+getId();
 
 
-
-// const getId = async () => {
-//     const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
-//          {method: "post"}                   
-//     )
-//     const data = await res.text()
-//     return data
-// }
-
-// getId().then((dat)=>{console.log(dat)})
-
-
-'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/8t6g73PoMQ4PoGggqL1h/likes'
+      
