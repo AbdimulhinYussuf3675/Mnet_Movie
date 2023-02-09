@@ -1,6 +1,6 @@
 import addcomment from './modules/addcomment.js';
 import commentForm from './modules/comment.js';
-import fetchapi from './modules/fetchapi.js';
+import fetchapi from './modules/commentapi';
 import fetchlike from './modules/fetchlike.js';
 import listlayout from './modules/listlayout.js';
 import newlike from './modules/newlike.js';
@@ -64,7 +64,6 @@ movies().then((movie) => {
 });
 
 // get unique api identifier
-
 const getId = async () => {
   const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
     { method: 'post' });
