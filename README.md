@@ -25,15 +25,6 @@ OPTIONAL SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -60,11 +51,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Mnet Movie project] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Mnet Movie project]** is a movie website with features of adding comment, tap on like to show interest and make reservations
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,21 +66,21 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://www.freecodecamp.org/news/html-crash-course/">Html</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Styling</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="freeCodeCamp.org">Css</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>Functionality</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.freecodecamp.org/news/full-javascript-course-for-beginners/">Javascript</a></li>
   </ul>
 </details>
 
@@ -99,9 +90,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[A button to like]**
+- **[A section to add comments]**
+- **[A section to make ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,97 +110,81 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
-To get a local copy up and running, follow these steps.
+A beginner developer can use this template as a starting point for creating other HTML projects that are properly set up with CSS and have ESLint configured.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
+- NODE
+- ESlint set up
 
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+gh repo clone https://github.com/AbdimulhinYussuf3675/Module2_capstune_Project.git
 
 ### Install
 
-Install this project with:
+To obtain a copy of this repository, clone it to your desired folder:
 
-<!--
-Example command:
+Commands: 
 
 ```sh
-  cd my-project
-  gem install
+  gh repo clone https://github.com/AbdimulhinYussuf3675/Module2_capstune_Project.git
+  cd hello-world
+  npm install -y
 ```
---->
+<br><br>
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+- install serve with: 
+```sh
+npm install -g serve
+```
 
 ```sh
-  rails server
+  serve -s .
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
+- To check for CSS errors
 
 ```sh
-  bin/rails test test/models/article_test.rb
+    npx stylelint "**/*.{css,scss}"
+
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
+- To check for HTML errors
 
 ```sh
-
+    npx hint .
 ```
- -->
+
+- To check for Javascript errors
+
+```sh
+    npx eslint .
+```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+## 👥 Authors <a name="authors">popoola samuel o.</a>
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@tobby8629](https://github.com/tobby8629)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [samuel popoola](https://linkedin.com/in/samuel-popoola-tobby/)
 
 👤 **Author2**
 
@@ -217,63 +192,64 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Author3**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> I'll add the following section to the webpage.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[section to download movie]()**
+- [ ] **[section to stream]()**
+- [ ] **[Add more movies]()**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/AbdimulhinYussuf3675/Module2_capstune_Project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project... Kindly leave a star ⭐
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Microverse and everyone who participate in the project
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Did you intergrate linters to your project]()**
 
-  - [Answer_1]
+  - [Yes]()
 
-- **[Question_2]**
+- **[Did you run all the tests]()**
 
-  - [Answer_2]
+  - [Yes]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -283,6 +259,5 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
