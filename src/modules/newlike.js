@@ -5,7 +5,7 @@ const newlike = (heart, index, id) => {
     heat.addEventListener('click', () => {
       if (inde === index) {
         addLikes(id);
-        const parent = heat.parentElement;
+        const parent = heat.parentElement.parentElement;
         const eachlike = parent.querySelector('.like');
         const eachIntext = eachlike.innerText;
         const increase = parseInt(eachIntext, 10) + 1;

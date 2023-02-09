@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_fetchlike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/fetchlike.js */ \"./src/modules/fetchlike.js\");\n/* harmony import */ var _modules_newlike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/newlike.js */ \"./src/modules/newlike.js\");\n/* harmony import */ var _modules_pagelayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/pagelayout.js */ \"./src/modules/pagelayout.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\nconst movies = async () => {\n  const res = await fetch('https://api.tvmaze.com/search/shows?q=girls');\n  const data = await res.json();\n  return data;\n};\n\nmovies().then((movie) => {\n  movie.map((each, index) => {\n    (0,_modules_pagelayout_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(each);\n    const num = document.querySelector('.total');\n    num.innerText = movie.length;\n    const heart = document.querySelectorAll('#heart');\n    const card = document.querySelectorAll('.list');\n    (0,_modules_fetchlike_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(card);\n    (0,_modules_newlike_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(heart, index, each.show.id);\n    return each;\n  });\n});\n\n// get unique api identifier\n\nconst getId = async () => {\n  const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',\n    { method: 'post' });\n  const data = await res.text();\n  return data;\n};\n\ngetId();\n\n\n//# sourceURL=webpack://module2_capstune_project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_fetchapi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/fetchapi.js */ \"./src/modules/fetchapi.js\");\n/* harmony import */ var _modules_fetchlike_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/fetchlike.js */ \"./src/modules/fetchlike.js\");\n/* harmony import */ var _modules_moviecount_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/moviecount.js */ \"./src/modules/moviecount.js\");\n/* harmony import */ var _modules_newlike_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/newlike.js */ \"./src/modules/newlike.js\");\n/* harmony import */ var _modules_pagelayout_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/pagelayout.js */ \"./src/modules/pagelayout.js\");\n/* harmony import */ var _modules_moviecount2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/moviecount2 */ \"./src/modules/moviecount2.js\");\n\n\n\n\n\n\n\n\n\n\n\n(0,_modules_fetchapi_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])().then((movie) => {\n  movie.map((each, index) => {\n    (0,_modules_pagelayout_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(each);\n    const wrapper = document.querySelector('.wrap');\n    (0,_modules_moviecount2__WEBPACK_IMPORTED_MODULE_6__[\"default\"])(wrapper)\n    // num.innerText = moviecount(movie);\n    const heart = document.querySelectorAll('#heart');\n    const card = document.querySelectorAll('.list');\n    (0,_modules_fetchlike_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(card);\n    (0,_modules_newlike_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(heart, index, each.show.id);\n    return each;\n  });\n});\n\n// get unique api identifier\n\nconst getId = async () => {\n  const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',\n    { method: 'post' });\n  const data = await res.text();\n  return data;\n};\n\ngetId();\n\n\n//# sourceURL=webpack://module2_capstune_project/./src/index.js?");
 
 /***/ }),
 
@@ -130,6 +130,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/modules/fetchapi.js":
+/*!*********************************!*\
+  !*** ./src/modules/fetchapi.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst movies = async () => {\r\n  const res = await fetch('https://api.tvmaze.com/search/shows?q=girls');\r\n  const data = await res.json();\r\n  return data;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (movies);\n\n//# sourceURL=webpack://module2_capstune_project/./src/modules/fetchapi.js?");
+
+/***/ }),
+
 /***/ "./src/modules/fetchlike.js":
 /*!**********************************!*\
   !*** ./src/modules/fetchlike.js ***!
@@ -137,6 +147,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst fetchlike = (ep) => {\n  ep.forEach((e) => {\n    const likes = async () => {\n      const res = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/8t6g73PoMQ4PoGggqL1h/likes');\n      const predata = res.json();\n      return predata;\n    };\n    likes().then((data) => {\n      data.forEach((dat) => {\n        if (parseInt(e.dataset.id, 10) === dat.item_id) {\n          const like = e.querySelector('.like');\n          like.innerText = dat.likes;\n        }\n      });\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fetchlike);\n\n//# sourceURL=webpack://module2_capstune_project/./src/modules/fetchlike.js?");
+
+/***/ }),
+
+/***/ "./src/modules/moviecount.js":
+/*!***********************************!*\
+  !*** ./src/modules/moviecount.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst moviecount = (movie) => {\r\n  const size = movie.length;\r\n   return size;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (moviecount);\n\n//# sourceURL=webpack://module2_capstune_project/./src/modules/moviecount.js?");
+
+/***/ }),
+
+/***/ "./src/modules/moviecount2.js":
+/*!************************************!*\
+  !*** ./src/modules/moviecount2.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst two = (section) => {\r\n    const num = document.querySelector('.total');\r\n    const items = array.from(section.children);\r\n    num.innerText = items.length;\r\n    return items\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (two);\n\n//# sourceURL=webpack://module2_capstune_project/./src/modules/moviecount2.js?");
 
 /***/ }),
 

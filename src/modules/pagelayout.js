@@ -6,12 +6,18 @@ const layout = (arry) => {
                         <img src=${arry.show.image.medium}>
                     </div>
                     <div class="name">
-                        <p>${arry.show.name}</p>
-                        <p><i class="fa-solid fa-heart" id="heart"></i> <span class='like'></span> likes</p>
+                       <p>${arry.show.name}</p>
+                       <i class="fa-solid fa-heart" id="heart"></i> 
                     </div>
+                    <p class=likes><span class='like'></span>likes</p>
                 </div>
-                <button id="comment" data-id = ${arry.show.id}>comments</button>
-                <button id="reserve" data-id = ${arry.show.id}>reservations</button>
+                <div class="btn">
+                  <button id="comment" data-id = ${arry.show.id}>comments</button>
+                </div>
+                <div class="btn">
+                  <button id="reserve" data-id = ${arry.show.id}>reservations</button>
+                </div>
+                
           `;
   const list = document.createElement('li');
   list.setAttribute('data-id', arry.show.id);
