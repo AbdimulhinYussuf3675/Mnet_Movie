@@ -22,7 +22,7 @@ const popUpHandler = (arry) => {
             popUp.innerHTML = `
             <div class='popup_container'>
               <div class='popup-header'>
-                <div class="res-img" style="background: url('${arry.show.image.medium}'); background-repeat: no-repeat;">
+                <div class="res-img" style="background: url('${arry.show.image.medium}');  background-position: center;background-repeat: no-repeat;background-size: contain;">
                 </div>
                 <div class="res-form">
                   <div class="close-h4"><h4 class="res-summary">Summary</h4> <span id="close-bar"><i class="fa-solid fa-xmark"></i></span> </div>

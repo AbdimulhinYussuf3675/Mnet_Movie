@@ -17,7 +17,7 @@ resForm.addEventListener('submit', (event) => {
     console.log(eDate, sDate)
 
     postReserve (name, sDate, eDate );
-    inputForm.reset();
+    // inputForm.reset();
   });
 
 
@@ -53,3 +53,4 @@ const showReserve = async (id) => {
   export default showReserve;
 
 // export default postReserve;
+// export { showReserve, postReserve}
