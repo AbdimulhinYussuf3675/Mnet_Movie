@@ -11,7 +11,6 @@ const addcomment = (dataid,name,text) => {
         headers : {'content-type' : 'application/json'}
     })
     .then(resc=> resc.text())
-    .then(data => console.log(data))
   }
 
 
