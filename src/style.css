@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 
 header {
@@ -25,7 +25,7 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin: .3rem
+  margin: 0.3rem;
 }
 
 nav li a {
@@ -33,13 +33,11 @@ nav li a {
   text-decoration: none;
 }
 
-
 main ul {
-  padding: 1rem; 
+  padding: 1rem;
   display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 20px;
-  
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 main li {
@@ -50,7 +48,7 @@ main li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .name p {
@@ -58,17 +56,17 @@ main li {
 }
 
 .name p i {
-    margin-right: 0 .5rem;
+  margin-right: 0 0.5rem;
 }
 
 button {
-    width: 100%;
-    font-size: 16px;
-    margin: 5px 0;
+  width: 100%;
+  font-size: 16px;
+  margin: 5px 0;
 }
 
-.img img{
-  width: 100%; 
+.img img {
+  width: 100%;
 }
 
 footer {
@@ -80,7 +78,7 @@ footer {
   font-size: 14px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   header,
   footer {
     padding: 1rem 3rem;
@@ -89,10 +87,10 @@ footer {
   main {
     width: 80%;
     margin: 1rem auto;
-  
+    position: relative;
   }
 
-  main ul{
+  main ul {
     padding: 1rem 2rem;
   }
 
@@ -124,20 +122,32 @@ footer {
   .ident .image img {
     height: 100%;
   }
-
 }
 
 <!-- Modal pop up session 
-
+/* main {
+  position: relative;
+} */
 .popup {
-  display: none;
+  /* display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 78;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
+  background-color: purple;
+  align-items: center; */
+  display: none;
+  position: fixed;
+  align-items: center;
+  left: 0;
+  top: 1%;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(65, 63, 63, 0.6);
 }
 
 .popup_container {
@@ -146,10 +156,72 @@ footer {
   padding: 5px 20px;
   margin: 50px auto;
   width: 80%;
-  height: auto;
+  height: 100%;
   justify-content: center;
   border-radius: 16px;
-  box-shadow:
-    0 5px 12px rgba(5, 50, 200, 0.5),
-    0 5px 12px rgba(5, 50, 200, 0.5);
+  box-shadow: 0 5px 12px rgba(5, 50, 200, 0.5), 0 5px 12px rgba(5, 50, 200, 0.5);
+}
+
+.popup-header {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+  margin: 0 auto;
+  justify-content: space-between;
+  /* column-gap: 124px; */
+  background-color: blue;
+  margin: 18px auto;
+}
+
+.res-img {
+  width: auto;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+
+.res-form {
+  width: 100%;
+}
+
+#add-reserve {
+  color: black;
+  height: 20px;
+  box-shadow: 2px 4px black;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin-top: 12px;
+  width: auto;
+  display: block;
+  font-size: 12px;
+}
+
+input {
+  width: 80%;
+  padding: 4px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.res-summary,
+.form_heading {
+  text-align: center;
+}
+
+.res-summary-note {
+  font-size: 8px;
+  color: aqua;
+}
+
+.fa-xmark {
+  background: none;
+  border: none;
+  font-size: 28px;
+}
+
+.close-h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
