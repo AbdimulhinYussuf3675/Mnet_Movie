@@ -2,13 +2,13 @@
  * @jest-environment jsdom
 */
 
-import addCommentCounter from "../modules/__mock__/CommentCountMock";
+import addCommentCounter from '../modules/__mock__/CommentCountMock';
 
-describe("Tests for comment counter", () => {
+describe('Tests for comment counter', () => {
   test('check if addcommentcounter exists', () => {
     expect(addCommentCounter).toBeDefined();
-  })
-  test("test it ruturns the number of comments elements to the page", () => {
+  });
+  test('test it ruturns the number of comments elements to the page', () => {
     document.body.innerHTML = `<h4 class="head"></h4>
               <h4  class="head"></h4>
               <h4 class="head"></h4>

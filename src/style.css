@@ -1,65 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Saira:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+
 header {
   background-color: rgb(55, 54, 54);
   color: rgb(178, 178, 178);
   padding: 1rem;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo h2 {
   font-size: 13px;
 }
+
 nav ul {
   display: flex;
   align-items: center;
 }
+
 nav li {
   list-style: none;
   margin: 3px;
 }
+
 nav li a {
   color: rgb(178, 178, 178);
   font-size: 13px;
   text-decoration: none;
 }
+
 main ul {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 main li {
   list-style: none;
 }
+
 .name {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem;
 }
+
 .name p {
   font-size: 13px;
 }
+
+.X i {
+  color: rgb(2, 2, 63);
+  font-size: 25px;
+}
+
 .name p i {
   margin-right: 0.5rem;
 }
+
 button {
   width: 100%;
   font-size: 16px;
   margin: 5px 0;
 }
+
 .img img {
   width: 100%;
 }
+
 .pop {
   position: fixed;
   width: 100%;
@@ -71,67 +91,70 @@ button {
   overflow-y: scroll;
   height: 100%;
 }
+
 .pup {
   border: 2px solid black;
   padding: 1rem;
   position: relative;
 }
+
 .ident {
-    text-align: center;
-    margin-bottom: .5rem;
-    width: 80%;
-    margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin: 0 0.5rem auto;
 }
+
 .ident .image img {
   width: 100%;
 }
-.comment {
- margin-bottom: .5rem;
-}
+
 .comment h4,
 .addcomment h4 {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  margin: .3rem;
+  margin: 0.3rem;
 }
+
 .comment p {
   margin: 5px;
 }
+
 .X {
   position: absolute;
   top: 8px;
   right: 10px;
 }
-.X i {
-  color: rgb(2, 2, 63);
-  font-size: 25px;
-}
+
 .addcomment form {
   display: flex;
   flex-direction: column;
 }
+
 .addcomment input {
   height: 30px;
-  border: 2px solid black ;
+  border: 2px solid black;
   margin: 10px 0;
   outline: none;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 80%;
 }
+
 .addcomment textarea {
-    resize: none;
-    width: 100%;
-    height: 100px;
-    padding: .5rem;
-    outline: none;
-    border: 2px solid rgb(64, 64, 64)
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid rgb(64, 64, 64);
 }
+
 .addcomment button {
-    width: 70%;
-    padding: 5px;
-    outline: none;
+  width: 70%;
+  padding: 5px;
+  outline: none;
 }
+
 footer {
   background-color: rgb(55, 54, 54);
   padding: 1rem;
@@ -140,39 +163,48 @@ footer {
   color: rgb(178, 178, 178);
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   header,
   footer {
     padding: 1rem 3rem;
   }
+
   main {
     width: 90%;
     margin: 1rem auto;
   }
+
   main ul {
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem 2rem;
   }
+
   .name p {
     font-size: 18px;
   }
+
   main button {
     font-size: 20px;
   }
+
   .ident,
   .addcomment {
     width: 60%;
     margin: 0 auto;
   }
+
   .ident .image {
     height: 400px;
     width: 100%;
     margin: 0 auto;
   }
+
   .ident .image img {
     height: 100%;
   }
 }
+
 .comment-form {
   display: flex;
   flex-direction: column;
@@ -180,14 +212,17 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
+
 .comment-form input {
   width: 100%;
 }
-#comment-btn{
+
+#comment-btn {
   width: 100px;
   align-self: center;
-  border-radius : 8px;
+  border-radius: 8px;
 }
+
 .res-form {
   display: flex;
   flex-direction: column;
@@ -195,14 +230,17 @@ footer {
   width: 50%;
   margin: 0 auto;
 }
+
 .reserve-btn {
   width: 100px;
   align-self: center;
-  border-radius : 8px;
+  border-radius: 8px;
 }
+
 .reserve-h4 {
   text-align: center;
 }
+
 #img-summary {
   width: 80%;
   display: grid;
@@ -211,16 +249,21 @@ footer {
   justify-content: space-between;
   column-gap: 24px;
 }
+
 .popup-image {
   width: 30%;
 }
+
 .popup-summary {
   width: 30%;
 }
+
 .comment {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
 }
+
 .list-test-reserve {
   width: 100%;
   display: grid;
