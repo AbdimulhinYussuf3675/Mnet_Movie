@@ -103,14 +103,14 @@ Here is a [presentation video](https://drive.google.com/file/d/1SjErz_q-v5IVQdDv
 ### Key Features <a name="key-features"></a>
 
 
-- **[Send and receive data from an API]**
-- **[Create a webpack]**
-- **[Use API documentation]**
-- **[Used Es6 import]**
- **[Understand and use JSON.]**
-- **[Make JavaScript code asynchronous.]**
-- **[Create a popup modal for reservation and comment button.]**
-- **[Implement a count function for likes, comment and reservation .]**
+- **Send and receive data from an API**
+- **Create a webpack**
+- **Use API documentation**
+- **Used Es6 import**
+ **Understand and use JSON.**
+- **Make JavaScript code asynchronous.**
+- **Create a popup modal for reservation and comment button.**
+- **Implement a count function for likes, comment and reservation .**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -178,7 +178,6 @@ Example command:
   cd my-project
   npx install
 ```
---->
 
 ### Usage
 
