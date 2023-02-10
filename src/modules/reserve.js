@@ -1,7 +1,6 @@
-
 const reserveForm = () => {
-    const pup = document.querySelector('.pup');
-    pup.innerHTML += ` <div class="addReserve">
+  const pup = document.querySelector('.pup');
+  pup.innerHTML += ` <div class="addReserve">
                 <h4 class="reserve-h4">Add Reservation</h4>
                 <form class="res-form">
                 <input type="text" placeholder="your name" id="name" required>
@@ -10,7 +9,7 @@ const reserveForm = () => {
 
                 <button class="reserve-btn">submit</button>
               </form>
-            </div>`
-}
+            </div>`;
+};
 
-export default reserveForm
+export default reserveForm;

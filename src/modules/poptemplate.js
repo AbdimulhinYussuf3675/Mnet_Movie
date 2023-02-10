@@ -1,6 +1,6 @@
-const poptemp = (data,section) => {
-    const main = document.querySelector('main');
-    const temp = `
+const poptemp = (data, section) => {
+  const main = document.querySelector('main');
+  const temp = `
             <div class="pup">
                 <div class="X">
                     <i class="fa-solid fa-x"></i>
@@ -23,12 +23,12 @@ const poptemp = (data,section) => {
                 </ul>
             </div>
             </div>
-        `
-    const pop = document.createElement('div')
-    pop.classList.add('pop')
-    pop.setAttribute('data-id', data.show.id);
-    pop.innerHTML = temp;
-    main.appendChild(pop)
-}
+        `;
+  const pop = document.createElement('div');
+  pop.classList.add('pop');
+  pop.setAttribute('data-id', data.show.id);
+  pop.innerHTML = temp;
+  main.appendChild(pop);
+};
 
-export default poptemp
+export default poptemp;

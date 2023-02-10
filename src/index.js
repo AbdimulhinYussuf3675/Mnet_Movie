@@ -3,7 +3,7 @@ import commentForm from './modules/comment.js';
 import fetchapi from './modules/fetchapi.js';
 import fetchlike from './modules/fetchlike.js';
 import listlayout from './modules/listlayout.js';
-import resLayout from './modules/resLayout';
+import resLayout from './modules/resLayout.js';
 import newlike from './modules/newlike.js';
 import layout from './modules/pagelayout.js';
 import poptemp from './modules/poptemplate.js';
@@ -20,7 +20,6 @@ const movies = async () => {
 
 movies().then((movie) => {
   movie.map((each, index) => {
-    console.log(each)
     layout(each);
     const num = document.querySelector('.total');
     num.innerText = movie.length;
@@ -28,85 +27,86 @@ movies().then((movie) => {
     const card = document.querySelectorAll('.list');
     fetchlike(card);
     newlike(heart, index, each.show.id);
-   
+
     // Comment Event Listeners
     const comment = document.querySelectorAll('#comment');
-    comment.forEach((com,ind)=>{
-      com.addEventListener('click',()=>{
-        if(index === ind ){
-          let lists = []
-          poptemp(each, 'comment')
-          commentForm()
-        //fetch api
-          fetchapi(each.show.id,lists,"comment")
+    comment.forEach((com, ind) => {
+      com.addEventListener('click', () => {
+        if (index === ind) {
+          const lists = [];
+          poptemp(each, 'comment');
+          commentForm();
+          // fetch api
+          fetchapi(each.show.id, lists, 'comment');
 
-        //add comment
-        const form = document.querySelector('form');
-        const user = document.querySelector('#name');
-        const text = document.querySelector('#text');
-        const comsec = document.querySelector('.test')
-        form.addEventListener('submit', (e) =>{
-        e.preventDefault();
-        addcomment(each.show.id,user.value,text.value)
-        lists.push({creation_date:"few minutes ago", username:user.value,comment:text.value})
-        comsec.innerHTML = "";
-        lists.map((e)=>{listlayout(e,comsec);})
-        user.value = "";
-        text.value = "";
-       const header = document.querySelector('.head');
-       header.innerHTML = `comment ${lists.length}`
-        })
-        //to cancel the pop up
-        const X = document.querySelector('.X');
-        X.addEventListener('click', ()=>{
-        const pop = document.querySelector('.pop');
-        pop.remove();
-        pop.innerrHTML = "";
-      })
+          // add comment
+          const form = document.querySelector('form');
+          const user = document.querySelector('#name');
+          const text = document.querySelector('#text');
+          const comsec = document.querySelector('.test');
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            addcomment(each.show.id, user.value, text.value);
+            lists.push({ creation_date: 'few minutes ago', username: user.value, comment: text.value });
+            comsec.innerHTML = '';
+            lists.map((e) => listlayout(e, comsec));
+            user.value = '';
+            text.value = '';
+            const header = document.querySelector('.head');
+            header.innerHTML = `comment ${lists.length}`;
+          });
+          // to cancel the pop up
+          const X = document.querySelector('.X');
+          X.addEventListener('click', () => {
+            const pop = document.querySelector('.pop');
+            pop.remove();
+            pop.innerrHTML = '';
+          });
         }
-      })
-    })
+      });
+    });
 
     // Reserve Event listeners start here
     const reserve = document.querySelectorAll('#reserve');
-    reserve.forEach((res,ind)=>{
-      res.addEventListener('click',()=>{
-        if(index === ind ){
-          let listr = []
-          poptemp(each, 'reserve')
-          reserveForm()
-        //fetch api
-        fetchResApi(each.show.id,listr,"reserve")
+    reserve.forEach((res, ind) => {
+      res.addEventListener('click', () => {
+        if (index === ind) {
+          const listr = [];
+          poptemp(each, 'reserve');
+          reserveForm();
+          // fetch api
+          fetchResApi(each.show.id, listr, 'Reservation');
 
-        //add comment
-        const form = document.querySelector('form');
-        const user = document.querySelector('#name');
-        const sDate = document.querySelector('#start-date');
-        const eDate = document.querySelector('#end-date');
-        const comsec = document.querySelector('.test')
-         console.log(eDate.value, sDate.value)
-        form.addEventListener('submit', (e) =>{
-        e.preventDefault();
-        addReserve(each.show.id,user.value,sDate.value, eDate.value)
-        listr.push({creation_date:"few minutes ago", username:user.value,date_start:sDate.value, date_end:eDate.value})
-        comsec.innerHTML = "";
-        listr.map((e)=>{resLayout(e,comsec);})
-        user.value = "";
-        sDate.value = "";
-        eDate.value = "";
-       const header = document.querySelector('.head');
-       header.innerHTML = `reserve ${listr.length}`
-        })
-        //to cancel the pop up
-        const X = document.querySelector('.X');
-        X.addEventListener('click', ()=>{
-        const pop = document.querySelector('.pop');
-        pop.remove();
-        pop.innerrHTML = "";
-      })
+          // add comment
+          const form = document.querySelector('form');
+          const user = document.querySelector('#name');
+          const sDate = document.querySelector('#start-date');
+          const eDate = document.querySelector('#end-date');
+          const comsec = document.querySelector('.test');
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            addReserve(each.show.id, user.value, sDate.value, eDate.value);
+            listr.push({
+              creation_date: 'few minutes ago', username: user.value, date_start: sDate.value, date_end: eDate.value,
+            });
+            comsec.innerHTML = '';
+            listr.map((e) => resLayout(e, comsec));
+            user.value = '';
+            sDate.value = '';
+            eDate.value = '';
+            const header = document.querySelector('.head');
+            header.innerHTML = `Reservation ${listr.length}`;
+          });
+          // to cancel the pop up
+          const X = document.querySelector('.X');
+          X.addEventListener('click', () => {
+            const pop = document.querySelector('.pop');
+            pop.remove();
+            pop.innerrHTML = '';
+          });
         }
-      })
-    })
+      });
+    });
     // Reserve end here
     return each;
   });
@@ -122,5 +122,3 @@ const getId = async () => {
 };
 
 getId();
-
-      
