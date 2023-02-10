@@ -117,10 +117,15 @@ After you're finished please remove all the comments and instructions!
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo Link](https://AbdimulhinYussuf3675.github.io/Module2_capstune_Project/dist/)
+
+
+### A video presentation of the project can be found in this Video [Link](https://drive.google.com/file/d/1SjErz_q-v5IVQdDvxnt1NjI_F2ibTzai/view?usp=sharing)
+
 
 <!-- > Add a link to your deployed project. -->
 
-- [Live Demo Link](https://AbdimulhinYussuf3675.github.io/Module2_capstune_Project/dist/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
