@@ -11,6 +11,7 @@ const fetchapi = (dataid, arr, headname) => {
         listlayout(e, comsec);
         const header = document.querySelector('.head');
         header.innerHTML = `${headname}(${each.length})`;
+        return e;
       });
     });
 };
