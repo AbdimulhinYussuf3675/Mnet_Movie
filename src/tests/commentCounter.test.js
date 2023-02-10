@@ -2,7 +2,7 @@
  * @jest-environment jsdom
 */
 
-import addCommentCounter from './__mock__/CommentCountMock';
+import addCommentCounter from './__mock__/CommentCountMock.js';
 
 describe('Tests for comment counter', () => {
   test('check if addcommentcounter exists', () => {

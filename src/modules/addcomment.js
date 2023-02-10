@@ -1,5 +1,5 @@
 const addcomment = (dataid, name, text) => {
-  fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/LiW5H2BeUCCme4OO04KP/comments',
+  fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/cXyK0mK0Ha1BkQqOi8Kz/comments',
     {
       method: 'post',
       body: JSON.stringify({
