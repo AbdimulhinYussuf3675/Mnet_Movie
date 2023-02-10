@@ -1,7 +1,6 @@
-const moviecount = (section) => {
-  const num = document.querySelector('.total');
+const moviecount = (section, temp) => {
   const items = Array.from(section.children);
-  num.innerText = items.length;
+  temp.innerText = items.length;
   return items;
 };
 

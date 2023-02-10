@@ -10,7 +10,7 @@
 header {
   background-color: rgb(5, 1, 1);
   color: rgb(178, 178, 178);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 footer a {
@@ -24,16 +24,15 @@ nav {
   align-items: center;
 }
 
-.logo  {
+.logo {
   font-size: 25px;
-  font-style: italic ;
+  font-style: italic;
   color: white;
 }
 
 nav ul {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 nav li {
@@ -43,7 +42,7 @@ nav li {
 
 nav li a {
   color: rgb(240, 233, 233);
-  font-size: 28px;
+  font-size: 13px;
   text-decoration: none;
 }
 
@@ -193,6 +192,12 @@ footer {
   header,
   footer {
     padding: 1rem 3rem;
+  }
+
+  nav li a {
+    color: rgb(240, 233, 233);
+    font-size: 20px;
+    text-decoration: none;
   }
 
   main {

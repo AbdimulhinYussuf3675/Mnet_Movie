@@ -17,7 +17,7 @@ const poptemp = (data, section) => {
             </div>
 
             <div class="comment">
-                <h4 class="head">${section}()</h4>
+                <h4>${section}(<span class="head"></span>)</h4>
                 <ul class="test list-test-reserve">
                 
                 </ul>

@@ -65,9 +65,10 @@ describe('test if the counter works', () => {
                               </footer>`;
 
   const wrapper = document.querySelector('.wrap');
+  const num = document.querySelector('.total');
 
   test('expect length to be zero', () => {
-    expect(moviecount(wrapper)).toHaveLength(0);
+    expect(moviecount(wrapper, num)).toHaveLength(0);
   });
 
   test('expect length to be three', () => {
@@ -75,7 +76,7 @@ describe('test if the counter works', () => {
       layout(list);
       return list;
     });
-    expect(moviecount(wrapper)).toHaveLength(3);
+    expect(moviecount(wrapper, num)).toHaveLength(3);
   });
 });
 

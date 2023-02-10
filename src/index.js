@@ -23,7 +23,8 @@ movies().then((movie) => {
   movie.map((each, index) => {
     layout(each);
     const wrapper = document.querySelector('.wrap');
-    moviecount(wrapper);
+    const num = document.querySelector('.total');
+    moviecount(wrapper, num);
     const heart = document.querySelectorAll('#heart');
     const card = document.querySelectorAll('.list');
     fetchlike(card);
@@ -38,7 +39,7 @@ movies().then((movie) => {
           poptemp(each, 'comment');
           commentForm();
           // fetch api
-          fetchapi(each.show.id, lists, 'comment');
+          fetchapi(each.show.id, lists);
 
           // add comment
           const form = document.querySelector('form');
@@ -47,6 +48,9 @@ movies().then((movie) => {
           const comsec = document.querySelector('.test');
           form.addEventListener('submit', (e) => {
             e.preventDefault();
+            if (user.value === '' || text.value === '') {
+              return;
+            }
             addcomment(each.show.id, user.value, text.value);
             lists.push({ creation_date: 'few minutes ago', username: user.value, comment: text.value });
             comsec.innerHTML = '';
@@ -54,7 +58,8 @@ movies().then((movie) => {
             user.value = '';
             text.value = '';
             const header = document.querySelector('.head');
-            header.innerHTML = `comment ${lists.length}`;
+            const test = document.querySelector('.test');
+            moviecount(test, header);
           });
           // to cancel the pop up
           const X = document.querySelector('.X');
@@ -73,10 +78,10 @@ movies().then((movie) => {
       res.addEventListener('click', () => {
         if (index === ind) {
           const listr = [];
-          poptemp(each, 'reserve');
+          poptemp(each, 'reservation');
           reserveForm();
           // fetch api
-          fetchResApi(each.show.id, listr, 'Reservation');
+          fetchResApi(each.show.id, listr);
 
           // add comment
           const form = document.querySelector('form');
@@ -86,6 +91,9 @@ movies().then((movie) => {
           const comsec = document.querySelector('.test');
           form.addEventListener('submit', (e) => {
             e.preventDefault();
+            if (user.value === '' || sDate.value === '' || eDate === '') {
+              return;
+            }
             addReserve(each.show.id, user.value, sDate.value, eDate.value);
             listr.push({
               creation_date: 'few minutes ago', username: user.value, date_start: sDate.value, date_end: eDate.value,
@@ -95,8 +103,10 @@ movies().then((movie) => {
             user.value = '';
             sDate.value = '';
             eDate.value = '';
+
             const header = document.querySelector('.head');
-            header.innerHTML = `Reservation ${listr.length}`;
+            const test = document.querySelector('.test');
+            moviecount(test, header);
           });
           // to cancel the pop up
           const X = document.querySelector('.X');

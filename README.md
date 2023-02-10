@@ -48,10 +48,8 @@ Here is a [presentation video](https://drive.google.com/file/d/1xt-lt4h_PEm0NxdS
   <summary>Client</summary>
   <ul>
     <li><a href="#">Index.html</a></li>
-        <li><a href="#">main.js</a></li>
-            <li><a href="#">Style.css</a></li>
-
-
+    <li><a href="#">main.js</a></li>
+    <li><a href="#">Style.css</a></li>
   </ul>
 </details> 
 <details>
@@ -162,9 +160,7 @@ Github pages
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+##👥 Authors <a name="authors"></a>
 
  👤**Chukwuemeka Ochuba**
 
@@ -222,8 +218,6 @@ I would like to appreciate [Microverse](https://www.microverse.org/) for providi
 
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[Are you sure that you are owner of this work]**
 
