@@ -111,7 +111,7 @@ button {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(250, 235, 215, 0.539);
+  background-color: rgba(250, 235, 215, 0.567);
   backdrop-filter: blur(9px);
   z-index: 99;
   padding: 0.5rem;
