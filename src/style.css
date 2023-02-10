@@ -8,7 +8,7 @@
 }
 
 header {
-  background-color: rgb(55, 54, 54);
+  background-color: rgb(5, 1, 1);
   color: rgb(178, 178, 178);
   padding: 1rem;
 }
@@ -24,13 +24,16 @@ nav {
   align-items: center;
 }
 
-.logo h2 {
-  font-size: 13px;
+.logo  {
+  font-size: 25px;
+  font-style: italic ;
+  color: white;
 }
 
 nav ul {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 nav li {
@@ -39,8 +42,8 @@ nav li {
 }
 
 nav li a {
-  color: rgb(178, 178, 178);
-  font-size: 13px;
+  color: rgb(240, 233, 233);
+  font-size: 28px;
   text-decoration: none;
 }
 
@@ -280,33 +283,7 @@ footer {
   text-align: center;
 }
 
-/* #img-summary {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
-  margin: 24px auto;
-  justify-content: space-between;
-  column-gap: 24px;
-}
-
-.popup-image {
-  width: 30%;
-}
-
-.popup-summary {
-  width: 30%;
-} */
-
 .comment {
   width: 90%;
   margin: 0 auto;
 }
-
-/* .list-test-reserve {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
-  margin: 24px auto;
-  justify-content: space-between;
-  column-gap: 24px;
-} */
