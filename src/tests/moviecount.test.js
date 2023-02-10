@@ -1,5 +1,5 @@
-import moviecount from "./moviecount.js";
-import layout from "./pagelayout.js";
+import moviecount from "../modules/moviecount.js";
+import layout from "../modules/pagelayout.js";
 
 describe('test if the counter works', ()=>{
   const lists = [
