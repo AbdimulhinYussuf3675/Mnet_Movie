@@ -7,7 +7,7 @@ const poptemp = (data, section) => {
                 </div>
               <div id="img-summary" class = ident>
                 <div class="image popup-image">
-                    <img src=${data.show.image.medium} alt="">
+                    <img src=${data.show.image.original} alt="">
                 </div class="popup-summary"> 
                 <div>  
                  <h3> ${data.show.name}</h3>

@@ -111,8 +111,7 @@ button {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(250, 235, 215, 0.567);
-  backdrop-filter: blur(9px);
+  background-color: rgba(250, 235, 215, 0.922);
   z-index: 99;
   padding: 0.5rem;
   overflow-y: scroll;
@@ -212,12 +211,20 @@ footer {
   }
 
   .pop {
-    padding: 2rem;
+    padding: .5rem 2rem;
+    background-color: rgba(250, 235, 215, 0.48);
+    backdrop-filter: blur(9px);
   }
 
   .pup {
     width: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+  }
+
+  .pup h3 {
+    font-size: 23px;
+    margin: 10px 0;
   }
 
   .ident,
@@ -226,9 +233,10 @@ footer {
     margin: 0 auto;
   }
 
+
   .ident .image {
     height: 400px;
-    width: 70%;
+    width: 75%;
     margin: 10px auto;
   }
 
