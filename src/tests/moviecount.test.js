@@ -1,24 +1,39 @@
-import moviecount from "../modules/moviecount.js";
-import layout from "../modules/pagelayout.js";
+import moviecount from '../modules/moviecount.js';
+import layout from '../modules/pagelayout.js';
 
-describe('test if the counter works', ()=>{
+describe('test if the counter works', () => {
   const lists = [
-   {score: 0.9087068, show : {image: 
-   {medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg'},
-    name: "Girls",
-    id: 13 }},
-   
-    {score: 0.9087068, show : {image: 
-   {medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg'},
-    name: "Girls",
-    id: 13 }},
+    {
+      score: 0.9087068,
+      show: {
+        image:
+   { medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg' },
+        name: 'Girls',
+        id: 13,
+      },
+    },
 
-    {score: 0.9087068, show : {image: 
-   {medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg'},
-    name: "Girls",
-    id: 13 }},
+    {
+      score: 0.9087068,
+      show: {
+        image:
+   { medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg' },
+        name: 'Girls',
+        id: 13,
+      },
+    },
 
-   ]
+    {
+      score: 0.9087068,
+      show: {
+        image:
+   { medium: 'https://static.tvmaze.com/uploadortrait/31/78286.jpg', original: 'https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg' },
+        name: 'Girls',
+        id: 13,
+      },
+    },
+
+  ];
 
   document.body.innerHTML = ` <header>
                                  <nav>
@@ -47,26 +62,21 @@ describe('test if the counter works', ()=>{
 
                               <footer>
                                  <h3>created by Microverse under CC license</h3>
-                              </footer>`
+                              </footer>`;
 
-const wrapper = document.querySelector('.wrap');
-  
+  const wrapper = document.querySelector('.wrap');
+
   test('expect length to be zero', () => {
-   expect(moviecount(wrapper)).toHaveLength(0)
-  })
+    expect(moviecount(wrapper)).toHaveLength(0);
+  });
 
   test('expect length to be three', () => {
-    lists.map((list)=>{
-      layout(list)
-    })
-    expect(moviecount(wrapper)).toHaveLength(3)
-  })
+    lists.map((list) => {
+      layout(list);
+      return list;
+    });
+    expect(moviecount(wrapper)).toHaveLength(3);
+  });
+});
 
-})
-
-
-//two(wrapper) line 17 and import two 
-
-
-
-
+// two(wrapper) line 17 and import two

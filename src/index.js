@@ -23,7 +23,7 @@ movies().then((movie) => {
   movie.map((each, index) => {
     layout(each);
     const wrapper = document.querySelector('.wrap');
-    moviecount(wrapper)
+    moviecount(wrapper);
     const heart = document.querySelectorAll('#heart');
     const card = document.querySelectorAll('.list');
     fetchlike(card);
