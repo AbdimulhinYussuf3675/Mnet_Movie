@@ -53,15 +53,15 @@ nav li a {
 
 .wrap li {
   list-style: none;
-  background-color: rgb(220, 212, 201);
+  background-color: rgba(220, 212, 201, 0.2);
   padding: 1rem;
+  border-radius: 8px;
 }
 
 .name {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem;
 }
 
 .name p {
@@ -99,6 +99,7 @@ button {
   padding: 0 0.5rem;
   border-radius: 5px;
   box-shadow: 5px 5px 5px 0 rgb(105, 105, 105);
+  color: rgb(81, 81, 81);
 }
 
 .img img {
@@ -110,28 +111,24 @@ button {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.539);
+  backdrop-filter: blur(9px);
   z-index: 99;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
   overflow-y: scroll;
   height: 100%;
 }
 
 .pup {
   border: 2px solid black;
-  padding: 1rem;
+  padding: 2rem;
   position: relative;
   border-radius: 12px;
 }
 
-.ident {
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .ident .image img {
   width: 100%;
+  height: 100%;
 }
 
 .comment h4,
@@ -214,16 +211,25 @@ footer {
     font-size: 20px;
   }
 
+  .pop {
+    padding: 2rem;
+  }
+
+  .pup {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
   .ident,
   .addcomment {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
   }
 
   .ident .image {
     height: 400px;
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 10px auto;
   }
 
   .ident .image img {
@@ -267,7 +273,7 @@ footer {
   text-align: center;
 }
 
-#img-summary {
+/* #img-summary {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
@@ -282,18 +288,18 @@ footer {
 
 .popup-summary {
   width: 30%;
-}
+} */
 
 .comment {
   width: 90%;
   margin: 0 auto;
 }
 
-.list-test-reserve {
+/* .list-test-reserve {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
   margin: 24px auto;
   justify-content: space-between;
   column-gap: 24px;
-}
+} */

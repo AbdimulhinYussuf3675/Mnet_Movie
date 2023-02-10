@@ -7,8 +7,12 @@ const layout = (arry) => {
                     </div>
                     <div class="name">
                         <p>${arry.show.name}</p>
-                        <p><i class="fa-solid fa-heart" id="heart"></i> <span class='like'></span> likes</p>
+                        <p><i class="fa-solid fa-heart" id="heart"></i></p>
                     </div>
+                    <p class = "likes">
+                      <span class='like'>0</span> likes
+                    <p>
+                    
                 </div>
                 <button id="comment" data-id = ${arry.show.id}>comments</button>
                 <button id="reserve" data-id = ${arry.show.id}>reservations</button>
