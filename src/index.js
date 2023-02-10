@@ -11,6 +11,7 @@ import reserveForm from './modules/reserve.js';
 import './style.css';
 import addReserve from './modules/addReserve.js';
 import fetchResApi from './modules/fetchApiRes.js';
+import moviecount from './modules/moviecount.js';
 
 const movies = async () => {
   const res = await fetch('https://api.tvmaze.com/search/shows?q=girls');
@@ -21,8 +22,8 @@ const movies = async () => {
 movies().then((movie) => {
   movie.map((each, index) => {
     layout(each);
-    const num = document.querySelector('.total');
-    num.innerText = movie.length;
+    const wrapper = document.querySelector('.wrap');
+    moviecount(wrapper)
     const heart = document.querySelectorAll('#heart');
     const card = document.querySelectorAll('.list');
     fetchlike(card);
