@@ -1,56 +1,21 @@
-import res from './resApi.js';
-
-// window.onload = getScore();
-
-const resForm = document.getElementById('res-form');
-const userName = document.getElementById('name');
-const startDate = document.getElementById('start-date');
-const endDate = document.getElementById('end-date');
-
-
-
-resForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const name = userName.value;
-    const sDate = startDate.value;
-    const eDate = endDate.value;
-    console.log(eDate, sDate)
-
-    postReserve (name, sDate, eDate );
-    // inputForm.reset();
-  });
-
-
-const postReserve = async (name, sDate, eDate) => {
-  await fetch(
-    res,
-    {
-      method: 'POST',
-      body: JSON.stringify({
-        item_id: 'item1',
-        user: name,
-        sDate,
-        eDate,
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    },
-  )
-    .then((response) => response.json())
-    // .then(() => getScore());
-};
-
-
-const showReserve = async (id) => {
-    const response = await fetch(
-        url,
-      )
-      .then((response) => response.json())
-      .then((json) => displayReserve(json));
-    };
+const addReserve = (dataid,name,sDate, eDate) => {
+ 
+    fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/cXyK0mK0Ha1BkQqOi8Kz/reservations',
+      {
+          method: "post",
+          body : JSON.stringify({
+            
+                item_id: dataid,
+                username: name,
+                date_start: sDate,
+                date_end: eDate
+            
+          }),
+          headers : {'content-type' : 'application/json'}
+      })
+      .then(resc=> resc.text())
+      .then(data => console.log(data))
+    }
   
-  export default showReserve;
-
-// export default postReserve;
-// export { showReserve, postReserve}
+  
+  export default addReserve
