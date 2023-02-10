@@ -234,13 +234,13 @@ Example:
 
 👤**Abdimulhin Adan**
 
-- GitHub: [@Donmark2k](https://github.com/AbdimulhinYussuf3675)
+- GitHub: [@AbdimulhinYussuf3675](https://github.com/AbdimulhinYussuf3675)
 - Twitter: [@abdimulhin](https://twitter.com/abdimulhin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdimulhin-yussuf-7b110720b/)
 
 👤**Samuel Tobby**
 
-- GitHub: [@Donmark2k](https://github.com/Tobby8629)
+- GitHub: [@Tobby8629](https://github.com/Tobby8629)
 - Twitter: [@Tobby_samuels](https://twitter.com/Tobby_samuels)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/samuel-popoola-tobby/)
 
