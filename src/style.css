@@ -39,17 +39,15 @@ nav li a {
   text-decoration: none;
 }
 
-.wrap {
+main ul {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
-.wrap li {
+main li {
   list-style: none;
-  background-color: rgb(220, 212, 201);
-  padding: 1rem;
 }
 
 .name {
@@ -60,38 +58,101 @@ nav li a {
 }
 
 .name p {
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.X i {
+  color: rgb(2, 2, 63);
+  font-size: 25px;
 }
 
 .name p i {
   margin-right: 0.5rem;
-  font-size: 20px;
-}
-
-.likes {
-  text-align: center;
-}
-
-.like {
-  font-size: 18px;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
 }
 
 button {
-  width: fit-content;
-  font-size: 18px;
-  margin: 5px auto;
-  padding: 0 0.5rem;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px 0 rgb(105, 105, 105);
+  width: 100%;
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 .img img {
   width: 100%;
+}
+
+.pop {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  z-index: 99;
+  padding: 1rem 2rem;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.pup {
+  border: 2px solid black;
+  padding: 1rem;
+  position: relative;
+}
+
+.ident {
+  text-align: center;
+  width: 80%;
+  margin: 0 0.5rem auto;
+}
+
+.ident .image img {
+  width: 100%;
+}
+
+.comment h4,
+.addcomment h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0.3rem;
+}
+
+.comment p {
+  margin: 5px;
+}
+
+.X {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.addcomment form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addcomment input {
+  height: 30px;
+  border: 2px solid black;
+  margin: 10px 0;
+  outline: none;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.addcomment textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  outline: none;
+  border: 2px solid rgb(64, 64, 64);
+}
+
+.addcomment button {
+  width: 70%;
+  padding: 5px;
+  outline: none;
 }
 
 footer {
@@ -110,12 +171,12 @@ footer {
   }
 
   main {
-    width: 98%;
+    width: 90%;
     margin: 1rem auto;
   }
 
-  .wrap {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  main ul {
+    grid-template-columns: repeat(3, 1fr);
     padding: 1rem 2rem;
   }
 
@@ -128,14 +189,13 @@ footer {
   }
 
   .ident,
-  .comment,
   .addcomment {
     width: 60%;
     margin: 0 auto;
   }
 
   .ident .image {
-    height: 220px;
+    height: 400px;
     width: 100%;
     margin: 0 auto;
   }
@@ -143,4 +203,72 @@ footer {
   .ident .image img {
     height: 100%;
   }
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.comment-form input {
+  width: 100%;
+}
+
+#comment-btn {
+  width: 100px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.res-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.reserve-btn {
+  width: 100px;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.reserve-h4 {
+  text-align: center;
+}
+
+#img-summary {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+  margin: 24px auto;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+
+.popup-image {
+  width: 30%;
+}
+
+.popup-summary {
+  width: 30%;
+}
+
+.comment {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.list-test-reserve {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+  margin: 24px auto;
+  justify-content: space-between;
+  column-gap: 24px;
 }
