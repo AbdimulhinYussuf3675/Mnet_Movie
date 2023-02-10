@@ -1,40 +1,13 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="https://cdn.icon-icons.com/icons2/3414/PNG/512/star_leaderboard_icon_218055.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -58,7 +31,6 @@ After you're finished please remove all the comments and instructions!
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 Mnet Movie project  <a name="about-project"></a>
 
@@ -71,8 +43,6 @@ Here is a [presentation video](https://drive.google.com/file/d/1xt-lt4h_PEm0NxdS
 - Javascript
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project. -->
 
  <details>
   <summary>Client</summary>
@@ -98,7 +68,6 @@ Here is a [presentation video](https://drive.google.com/file/d/1xt-lt4h_PEm0NxdS
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -113,9 +82,8 @@ Here is a [presentation video](https://drive.google.com/file/d/1xt-lt4h_PEm0NxdS
 - **Implement a count function for likes, comment and reservation .**
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo Link](https://AbdimulhinYussuf3675.github.io/Module2_capstune_Project/dist/)
@@ -124,34 +92,21 @@ Here is a [presentation video](https://drive.google.com/file/d/1xt-lt4h_PEm0NxdS
 ### A video presentation of the project can be found in this Video [Link](https://drive.google.com/file/d/1SjErz_q-v5IVQdDvxnt1NjI_F2ibTzai/view?usp=sharing)
 
 
-<!-- > Add a link to your deployed project. -->
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
-- In order to run this project you need:
 
 - [git](https://git-scm.com/downloads): A tool for managing source code
 - [Visual Studio Code](https://code.visualstudio.com/): A source code editor
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
-<!--
-Example command:
 
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -184,13 +139,6 @@ Example command:
 - Run npm start for development. 
 - Run npm run build for production
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
@@ -199,13 +147,7 @@ To run tests, run the following command:
 - Run npx eslint . --fix to fix JS errors if found
 - Run npx stylelint "**/*.{css,scss}" for CSS check
 - Run npx stylelint "**/*.{css,scss}" --fix to fix CSS errors if found.
-<!--
-Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
@@ -215,17 +157,10 @@ You can deploy this project using:
 Github pages
 
 <p>follow <a href="https://www.w3schools.com/git/git_remote_pages.asp?remote=github">these steps</a> for example</p>
-<!--
-Example:
 
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -252,7 +187,6 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 - I will add time and date below the nav bar
@@ -262,7 +196,6 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -272,7 +205,6 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -281,7 +213,6 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -289,7 +220,6 @@ I would like to appreciate [Microverse](https://www.microverse.org/) for providi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
@@ -306,7 +236,6 @@ I would like to appreciate [Microverse](https://www.microverse.org/) for providi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
