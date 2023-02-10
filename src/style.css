@@ -211,7 +211,7 @@ footer {
   }
 
   .pop {
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: rgba(250, 235, 215, 0.48);
     backdrop-filter: blur(9px);
   }
@@ -232,7 +232,6 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
-
 
   .ident .image {
     height: 400px;
