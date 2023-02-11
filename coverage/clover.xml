@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1676063739021" clover="3.2.0">
+  <project timestamp="1676063739021" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="20" coveredelements="20" complexity="0" loc="17" ncloc="17" packages="1" files="3" classes="3"/>
+    <file name="listlayout.js" path="C:\Users\HP\Desktop\module 2\Module2_capstune_Project\src\modules\listlayout.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="8" type="stmt"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
+    </file>
+    <file name="moviecount.js" path="C:\Users\HP\Desktop\module 2\Module2_capstune_Project\src\modules\moviecount.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="3" type="stmt"/>
+      <line num="2" count="6" type="stmt"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="stmt"/>
+    </file>
+    <file name="pagelayout.js" path="C:\Users\HP\Desktop\module 2\Module2_capstune_Project\src\modules\pagelayout.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="21" count="3" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>
