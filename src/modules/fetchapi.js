@@ -12,8 +12,6 @@ const fetchapi = (dataid, arr) => {
     arr.push(...arr, ...each);
     each.map((e) => {
       listlayout(e, comsec);
-      const header = document.querySelector('.head');
-      header.innerHTML = `${each.length}`;
       return e;
     });
   });
