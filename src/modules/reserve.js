@@ -3,9 +3,9 @@ const reserveForm = () => {
   pup.innerHTML += ` <div class="addReserve">
                 <h4 class="reserve-h4">Add Reservation</h4>
                 <form class="res-form">
-                <input type="text" placeholder="your name" id="name" required>
-                <input id="start-date" type="date" placeholder="start date" required />
-                <input id="end-date" type="date" placeholder="end date" required />
+                <input type="text" placeholder="your name" id="name" >
+                <input id="start-date" type="date" placeholder="start date"  />
+                <input id="end-date" type="date" placeholder="end date"  />
 
                 <button class="reserve-btn">submit</button>
               </form>
