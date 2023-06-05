@@ -14,7 +14,7 @@ const fetchResApi = (dataid, arr) => {
     each.map((e) => {
       resLayout(e, comsec);
       const header = document.querySelector('.head');
-      header.innerHTML = `${each.length}`;
+      header.innerHTML = `${each.lengt}`;
       return e;
     });
   });
